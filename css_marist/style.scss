@@ -1,0 +1,275 @@
+/* General colors and styles for the Marist website */
+
+/* - Please base additional styles or changes to the existing CSS
+   on the style tiles provided in /images
+   - You will need SASS installed to utilize this CSS
+*/
+
+$marist-red: #B31B1B;
+$marist-deep-red: #670000;
+$marist-white: #fcfeff;
+$marist-teal: #008999;
+$marist-grey: #E5E9EA;
+$marist-black: #080A0A;
+$soft-black: #808483;
+$marist-teal-hover: #26AFBF;
+$marist-input-grey: #A5A9AA;
+$marist-input-grey2: #F2F6F7;
+$marist-input-border: #D8DCDD;
+
+$header-font: 'Myriad Pro Semibold',sans-serif;
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+}
+
+$margin: .7em;
+
+/* Fonts */
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    src: url('../fonts/MyriadPro-Semibold.otf');
+}
+
+/*  Icons  */
+@font-face {
+    font-family: 'Ionicons';
+    src: url('../fonts/ionicons.woff' format("woff"), url("../fonts/ionicons.ttf") format("truetype"));
+}
+
+body {
+    font-size: 16px;
+    font-family: Georgia, serif;
+}
+
+p.large{
+    line-height: 1.45;
+    font-size: 1.333em;
+}
+
+h1, h2, h3, h4 {
+	font-family: $header-font;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.369em;
+}
+h2 {
+	font-size: 1.777em;
+}
+h3 {
+	font-size: 1.333em;
+}
+h4 {
+	font-size: 1em;
+}
+
+p{
+    line-height: 1.45;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Button styles  */
+
+.sm-btn, .lg-btn {
+	font-family: $header-font;
+	margin:.5em 0 .5em;
+}
+
+.sm-btn {
+    height: 32px;
+    padding: 8px 24px;
+    font-size: .75em;
+    text-transform: uppercase;
+}
+
+.lg-btn {
+	height: 48px;
+    padding: 11px 32px;
+    font-size: 1.33em;
+    text-transform: uppercase;
+}
+
+
+.positive-btn {
+	background: $marist-teal;
+	border: 1px solid $marist-black;
+	color: $marist-white;
+	&:hover {
+		background: $marist-teal-hover;
+	}
+}
+
+.neutral-btn {
+	background: $marist-white;
+	border: 1px solid $marist-black;
+	color: $marist-black;
+	&:hover {
+		background: $marist-black;
+		color: $marist-white;
+	}
+}
+
+.negative-btn {
+	background: $marist-white;
+	border: 1px solid $marist-red;
+	color: $marist-red;
+	&:hover {
+		background: $marist-red;
+		color: $marist-white;
+	}
+}
+
+.content a {
+	&:link {
+    color: $marist-teal;
+    }
+    &:hover {
+    	@include opacity(0.8);
+    }
+    &:visited {
+    	@include opacity(0.8);
+    	color: $marist-teal;
+	}
+	&:active {
+    	@include opacity(0.8);
+    	color: $marist-teal;
+	}
+}
+
+.top-buffer { 
+	margin-top: 2em; 
+}
+
+/* Form controls */
+
+form {
+	font-family: $header-font!important;
+	font-weight: normal;
+	label {
+		font-size: .8em;
+		padding-left: 1em;
+	}
+	input {
+		height: 48px;
+		width: 300px;
+		display: block;
+		margin-bottom: .8em;
+		padding: 19px 0px 9px 16px;
+		font-size: 1em;
+		background: $marist-white;
+		color: $marist-input-grey;
+		border: 1px solid $marist-input-border;
+		&:focus {
+			background: $marist-input-grey2;
+			color: $marist-black;
+			border: 1px solid #BFC3C4;
+			outline-color: #BFC3C4;
+		}
+	}
+	.dropdown {
+		border-radius: 0px;
+		height: 48px;
+		width: 300px;
+		padding: 19px 0px 9px 16px;
+		font-size: 1em;
+		text-align: left;
+		background: $marist-white;
+		color: $marist-input-grey;
+		border: 1px solid $marist-input-border;
+		&:focus {
+			background: $marist-input-grey2;
+			color: $marist-black;
+			border: 1px solid #BFC3C4;
+			outline-color: #BFC3C4;
+		}
+		&:hover {
+			background: $marist-input-grey2;
+		}
+	}
+}
+
+.input-success {
+	background: $marist-white;
+	color: $marist-black;
+	border: 1px solid #5BCA5B;
+}
+
+.input-alert {
+	background: $marist-white;
+	color: $marist-black;
+	border: 1px solid #BB2424;
+}
+
+.ion-checkmark {
+	color: #5BCA5B;
+}
+
+.ion-alert-circled {
+	color: #BB2424;
+}
+
+/* Styles for header */
+
+#header-top {
+    background-color: #b31b1b;
+    /*height: 62.4px;*/
+    .maristLogo {
+		margin: .3em 0 .5em 1.7em;
+	}
+}
+
+.content {
+	margin-top: 3em;
+	margin-bottom: 5em;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Georgia, serif;
+    color: $marist-white;
+    text-align: left;
+    height: 218px;
+}
+footer p {
+    line-height: 1.45;
+}
+#footer-bottom {
+    background-color: #404040;
+}
+#marist-info {
+    padding: 4em 0 1.5em 3.5em;
+}
+#marist-info img {
+    margin-bottom: 1.5em;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 775px) {
+    #header-top {
+        text-align: center;
+	    #maristLogo {
+	        margin: 5px 0 0 0px;
+	    }
+    }
+    .content {
+    	margin:1em;
+    }
+    #footer {
+        position: relative;
+    }
+    #marist-info {
+    padding: 4em 0 1.5em 0em;
+    text-align: center;
+    }
+}
+

@@ -1,0 +1,204 @@
+/* General colors and styles for the Marist website */
+/* - Please base additional styles or changes to the existing CSS
+   on the style tiles provided in /images
+   - You will need SASS installed to utilize this CSS
+*/
+/* Fonts */
+@font-face {
+  font-family: 'Myriad Pro Semibold';
+  src: url("../fonts/MyriadPro-Semibold.otf"); }
+/*  Icons  */
+@font-face {
+  font-family: 'Ionicons';
+  src: url("../fonts/ionicons.woff" format("woff"), url("../fonts/ionicons.ttf") format("truetype")); }
+body {
+  font-size: 16px;
+  font-family: Georgia, serif; }
+
+p.large {
+  line-height: 1.45;
+  font-size: 1.333em; }
+
+h1, h2, h3, h4 {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 2.369em; }
+
+h2 {
+  font-size: 1.777em; }
+
+h3 {
+  font-size: 1.333em; }
+
+h4 {
+  font-size: 1em; }
+
+p {
+  line-height: 1.45; }
+
+img {
+  max-width: 100%; }
+
+/* Button styles  */
+.sm-btn, .lg-btn {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  margin: .5em 0 .5em; }
+
+.sm-btn {
+  height: 32px;
+  padding: 8px 24px;
+  font-size: .75em;
+  text-transform: uppercase; }
+
+.lg-btn {
+  height: 48px;
+  padding: 11px 32px;
+  font-size: 1.33em;
+  text-transform: uppercase; }
+
+.positive-btn {
+  background: #008999;
+  border: 1px solid #080A0A;
+  color: #fcfeff; }
+  .positive-btn:hover {
+    background: #26AFBF; }
+
+.neutral-btn {
+  background: #fcfeff;
+  border: 1px solid #080A0A;
+  color: #080A0A; }
+  .neutral-btn:hover {
+    background: #080A0A;
+    color: #fcfeff; }
+
+.negative-btn {
+  background: #fcfeff;
+  border: 1px solid #B31B1B;
+  color: #B31B1B; }
+  .negative-btn:hover {
+    background: #B31B1B;
+    color: #fcfeff; }
+
+.content a:link {
+  color: #008999; }
+.content a:hover {
+  opacity: 0.8; }
+.content a:visited {
+  opacity: 0.8;
+  color: #008999; }
+.content a:active {
+  opacity: 0.8;
+  color: #008999; }
+
+.top-buffer {
+  margin-top: 2em; }
+
+/* Form controls */
+form {
+  font-family: "Myriad Pro Semibold", sans-serif !important;
+  font-weight: normal; }
+  form label {
+    font-size: .8em;
+    padding-left: 1em; }
+  form input {
+    height: 48px;
+    width: 300px;
+    display: block;
+    margin-bottom: .8em;
+    padding: 19px 0px 9px 16px;
+    font-size: 1em;
+    background: #fcfeff;
+    color: #A5A9AA;
+    border: 1px solid #D8DCDD; }
+    form input:focus {
+      background: #F2F6F7;
+      color: #080A0A;
+      border: 1px solid #BFC3C4;
+      outline-color: #BFC3C4; }
+  form .dropdown {
+    border-radius: 0px;
+    height: 48px;
+    width: 300px;
+    padding: 19px 0px 9px 16px;
+    font-size: 1em;
+    text-align: left;
+    background: #fcfeff;
+    color: #A5A9AA;
+    border: 1px solid #D8DCDD; }
+    form .dropdown:focus {
+      background: #F2F6F7;
+      color: #080A0A;
+      border: 1px solid #BFC3C4;
+      outline-color: #BFC3C4; }
+    form .dropdown:hover {
+      background: #F2F6F7; }
+
+.input-success {
+  background: #fcfeff;
+  color: #080A0A;
+  border: 1px solid #5BCA5B; }
+
+.input-alert {
+  background: #fcfeff;
+  color: #080A0A;
+  border: 1px solid #BB2424; }
+
+.ion-checkmark {
+  color: #5BCA5B; }
+
+.ion-alert-circled {
+  color: #BB2424; }
+
+/* Styles for header */
+#header-top {
+  background-color: #b31b1b;
+  /*height: 62.4px;*/ }
+  #header-top .maristLogo {
+    margin: .3em 0 .5em 1.7em; }
+
+.content {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: Georgia, serif;
+  color: #fcfeff;
+  text-align: left;
+  height: 218px; }
+
+footer p {
+  line-height: 1.45; }
+
+#footer-bottom {
+  background-color: #404040; }
+
+#marist-info {
+  padding: 4em 0 1.5em 3.5em; }
+
+#marist-info img {
+  margin-bottom: 1.5em; }
+
+/* Responsive */
+@media only screen and (max-width: 775px) {
+  #header-top {
+    text-align: center; }
+    #header-top #maristLogo {
+      margin: 5px 0 0 0px; }
+
+  .content {
+    margin: 1em; }
+
+  #footer {
+    position: relative; }
+
+  #marist-info {
+    padding: 4em 0 1.5em 0em;
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

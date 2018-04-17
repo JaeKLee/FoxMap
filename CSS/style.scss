@@ -1,0 +1,403 @@
+// Created by Jae Kyoung Lee and Ian Sniffen
+// © Copyright 2017 Marist College. All Rights Reserved.
+
+// SASS is needed to use this CSS
+
+$marist-red:          #B31B1B;
+$marist-deep-red:     #670000;
+$marist-white:        #fcfeff;
+$marist-teal:         #008999;
+$marist-grey:         #E5E9EA;
+$marist-black:        #080A0A;
+$soft-black:          #808483;
+$marist-teal-hover:   #26AFBF;
+$marist-input-grey:   #A5A9AA;
+$marist-input-grey2:  #F2F6F7;
+$marist-input-border: #D8DCDD;
+
+$header-font: 'Myriad Pro Semibold',sans-serif;
+
+$timing: .3s;
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    src: url('../fonts/MyriadPro-Semibold.otf')
+}
+@font-face {
+    font-family: 'Ionicons';
+    src: url('../fonts/ionicons.woff' format("woff"), url("../fonts/ionicons.ttf") format("truetype"));
+}
+//------------------------Header-------------------------
+#header-top {
+    background-color: #b31b1b;
+    /*height: 62.4px;*/
+    .maristLogo {
+		margin: .3em 0 .5em 1.7em;
+	}
+}
+
+#copyright {
+    position: absolute; 
+    right: 5px; 
+    bottom: 0.5%; 
+    color: white; 
+    font-size: 12px;
+}
+
+//----------------------General Body---------------------
+*{
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+#imageID{
+    bottom:   0;
+    width:    100%; 
+    z-index:  -1; 
+    position: absolute;
+}
+
+.tooltip {
+    display: none;
+}
+
+.tooltip img{
+    float: left;
+}
+
+body {
+    font-family: arial; 
+    width: 100%;
+}
+
+h2 {
+    font-family: $header-font;
+    margin: 0.5%;
+    text-align: center;
+}
+
+/*-----------------Search-----------------*/
+form {
+    
+    /*padding: 8rem 0 0 1%;*/
+    display: inline;
+            /*top right bottom left*/
+    width: 300px;
+    margin: 0 auto;
+}
+
+#tipue_search_input{
+    position: relative;
+    padding: 0 0 0 40px;
+    background: $marist-white;
+    border: none;
+    border-radius: 0px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#tipue_search_content {
+    position:relative;
+    display: none;
+}
+
+.tipue_search_content_text {
+    // top right bottom left
+    padding: 0 0 0.3% 0.5%;
+}
+
+.tipue_search_content_title a {
+    color: $marist-teal;
+    font-weight: bold;
+    &:hover {
+        @include opacity(0.8);
+    }
+    &:visited {
+    	@include opacity(0.8);
+    	color: $marist-teal;
+    }
+    &:active {
+    	@include opacity(0.8);
+    	color: $marist-teal;
+    }
+}
+
+#searchBarDiv {
+    background-color: rgba(255,255,255,0.5); //white
+    padding-top: 25px;
+    // position: relative; 
+    width: 100%;
+}
+
+#tipue_search_foot_boxes {
+	padding: 0;
+	margin-left: 2%;
+	cursor: pointer;
+}
+#tipue_search_foot_boxes li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	
+}
+#tipue_search_foot_boxes li a {
+	color: #333;
+	margin-right: 7px;
+	text-decoration: none;
+	text-align: center;
+	&:hover {
+	   color: white;
+	}
+}
+#tipue_search_foot_boxes li.current {
+	color: grey;
+	margin-right: 7px;
+	text-align: center;
+}
+
+input, #submit {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+
+input {
+  color: #333;
+  z-index: 2;
+  border: 0 none;
+}
+input:focus {
+  outline: 0 none;
+}
+input:focus + #submit {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+input:focus + #submit .fa {
+  -webkit-transform: translate(0px, 0);
+          transform: translate(0px, 0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: $marist-white;
+}
+
+#submit {
+  z-index: 1;
+  width: 50px;
+  border: 0 none;
+  color: white;
+  background: $marist-red;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;  
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#submitGlass{
+    font-size: 24px;
+    color: white;
+    -webkit-transform: rotate(-45deg); 
+            transform: rotate(-45deg);
+}
+
+.fa-search {
+  font-size: 1.4rem;
+  color: $marist-red;
+  z-index: 3;
+  top: 25%;
+  -webkit-transform: translate(-190px, 0);
+          transform: translate(-190px, 0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+}
+
+
+// -------------------------Welp (Help)--------------------------
+.helpContent {
+    font-size: 18px;
+}
+
+// The actual help button on the top right corner
+.helpbtn {
+    font-family: Georgia, serif;
+    border-radius: 50%; 
+    height: 32px; 
+    width: 32px; 
+    font-size: 25px;
+    text-align: center;
+    background-color: $marist-white;
+    border: 1px solid $marist-black;
+    
+    position: absolute;
+    display: inline-block;
+    margin: 1% 0.5%;
+    right: 0.5%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+//The actual popup content
+.helpbtn .helpContent {
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -12px; //Adjust the height position of popup box
+    left: 0%; //Sets popup box to the left side
+    margin-left: -313px; //Adjust the horizontal position of popup box
+    
+    // The popup arrow
+    &:after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 100%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari 3-8 */
+    transform: rotate(270deg);
+    }
+}
+
+
+//Toggle, hide and show when help btn is clicked
+.helpbtn .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+// Add animation (fade in the popup)
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*---------------------Parking Lot Map----------------------*/
+#parkbtn{
+    position: absolute;
+    margin: 0.1% 0;
+    right: 0.5%;
+    font-family: $header-font;
+    height: 50px;
+    padding: 1px 24px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    background: $marist-teal;
+	border: 1px solid $marist-black;
+	color: $marist-white;
+	&:hover {
+		background: $marist-teal-hover;
+	}
+}
+
+#parkingmap {
+    height: 100%; 
+    position: absolute; 
+    left: 15%;
+}
+
+.parkDiv {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.parkDiv-content {
+    margin: auto;
+    display: block;
+    height: 100%;
+    left: 15%;
+}
+
+#closeBtn {
+    position: relative;
+    z-index: 1;
+    left: 85%; /*79*/
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    
+    &:hover, &:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.parkDiv-content {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+//------------------------------Dropdown------------------------------
+#search_dd {
+  padding: 19px 0px 9px 16px;
+  display: inline-block;
+  margin: 0 1em 0 0.5%;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1em;
+  outline: none;
+  background: $marist-white; //used for background color of folded dropdown
+  color: $marist-input-grey; //text color
+  border: 1px solid $marist-input-border;
+  transition: $timing all ease-in-out;  
+  &:focus {
+      background: $marist-input-grey2;
+      color: $marist-black;
+      border: 1px solid #BFC3C4;
+      outline-color: #BFC3C4;
+  }
+  &:hover {
+      background: $marist-input-grey2;
+  }
+}

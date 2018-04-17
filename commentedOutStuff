@@ -1,0 +1,96 @@
+//HTML
+    //HEAD
+    <!--<link rel="stylesheet" href="jquery.mapify.css">-->
+    <!--<link rel="stylesheet" href="bootstrap-3.3.1.min.css">-->
+    <!--<link rel="stylesheet" href="map-trifecta.css">-->
+
+    //End of body
+    <!--<script src="jQuery-maphilight.js" type="text/javascript"></script>-->
+     
+    <!--<script src="jQuery-rwdImageMaps.js"></script>-->
+    
+    <!--<script src="map_rollover.js"></script>-->
+    
+    <!--<script src= "jquery.mapify.js" type="text/javascript"></script>-->
+    
+    <!--<script src="jquery.map-trifecta.min.js"> </script>-->
+        
+    <!--<script src= "jquery.imagemapster.min.js" type="text/javascript"></script>-->
+
+
+//CSS
+
+fieldset {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 40px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/*select#search_dd {
+   color: #fff;
+   background-image: -webkit-linear-gradient(#B31B1B, #B31B1B 40%, #B31B1B);
+   background-color: #B31B1B;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   padding-left: 15px;
+}*/
+
+{
+    display: inline-block;
+	border-radius: 0px;
+	height: 48px;
+	width: 300px;
+	
+	margin: 0 1em 0 0.5%;
+	padding: 19px 0px 9px 16px;
+	font-size: 1em;
+	text-align: left;
+	background: $marist-white;
+	color: $marist-input-grey;
+	border: 1px solid $marist-input-border;
+	&:focus {
+		background: $marist-input-grey2;
+		color: $marist-black;
+		border: 1px solid #BFC3C4;
+		outline-color: #BFC3C4;
+	}
+	&:hover {
+		background: $marist-input-grey2;
+	}
+}
+
+
+//JS
+    Tipue, content:
+    //text: $(this).next('.tooltip'),
+                //text: $((this).attr('id')+'tip').html(),
+                //text: $($(this).attr('id')+"tip").html(),
+                
+    showtooltip, tip:
+    		          //mimic: 'right center'
+
+    $('#imageID').click(function() {
+        $('#tipue_search_content').css('display', 'external').fadeOut(400, function() {
+            document.getElementById("tipue_search_content").style.padding = "0px 0 0px 0"; });
+        });
+    });
+
+//dropdown
+$('#search_dd').click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(this).toggleClass('expanded');
+  $('#'+$(e.target).attr('for')).prop('checked',true);
+});
+$(document).click(function() {
+  $('#search_dd').removeClass('expanded');
+});
+
+
+$('#parkbtn').click(function() {
+        $('#tipue_search_content').css('display', 'none');
+    })

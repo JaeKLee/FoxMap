@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'Myriad Pro Semibold';
+  src: url("../fonts/MyriadPro-Semibold.otf"); }
+@font-face {
+  font-family: 'Ionicons';
+  src: url("../fonts/ionicons.woff" format("woff"), url("../fonts/ionicons.ttf") format("truetype")); }
+#header-top {
+  background-color: #b31b1b;
+  /*height: 62.4px;*/ }
+  #header-top .maristLogo {
+    margin: .3em 0 .5em 1.7em; }
+
+#copyright {
+  position: absolute;
+  right: 5px;
+  bottom: 0.5%;
+  color: white;
+  font-size: 12px; }
+
+* {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0; }
+
+#imageID {
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  position: absolute; }
+
+.tooltip {
+  display: none; }
+
+.tooltip img {
+  float: left; }
+
+body {
+  font-family: arial;
+  width: 100%; }
+
+h2 {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  margin: 0.5%;
+  text-align: center; }
+
+/*-----------------Search-----------------*/
+form {
+  /*padding: 8rem 0 0 1%;*/
+  display: inline;
+  /*top right bottom left*/
+  width: 300px;
+  margin: 0 auto; }
+
+#tipue_search_input {
+  position: relative;
+  padding: 0 0 0 40px;
+  background: #fcfeff;
+  border: none;
+  border-radius: 0px; }
+
+button:focus {
+  outline: 0; }
+
+#tipue_search_content {
+  position: relative;
+  display: none; }
+
+.tipue_search_content_text {
+  padding: 0 0 0.3% 0.5%; }
+
+.tipue_search_content_title a {
+  color: #008999;
+  font-weight: bold; }
+  .tipue_search_content_title a:hover {
+    opacity: 0.8; }
+  .tipue_search_content_title a:visited {
+    opacity: 0.8;
+    color: #008999; }
+  .tipue_search_content_title a:active {
+    opacity: 0.8;
+    color: #008999; }
+
+#searchBarDiv {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 25px;
+  width: 100%; }
+
+#tipue_search_foot_boxes {
+  padding: 0;
+  margin-left: 2%;
+  cursor: pointer; }
+
+#tipue_search_foot_boxes li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline; }
+
+#tipue_search_foot_boxes li a {
+  color: #333;
+  margin-right: 7px;
+  text-decoration: none;
+  text-align: center; }
+  #tipue_search_foot_boxes li a:hover {
+    color: white; }
+
+#tipue_search_foot_boxes li.current {
+  color: grey;
+  margin-right: 7px;
+  text-align: center; }
+
+input, #submit {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  display: inline-block;
+  float: left; }
+
+input {
+  color: #333;
+  z-index: 2;
+  border: 0 none; }
+
+input:focus {
+  outline: 0 none; }
+
+input:focus + #submit {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+input:focus + #submit .fa {
+  -webkit-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #fcfeff; }
+
+#submit {
+  z-index: 1;
+  width: 50px;
+  border: 0 none;
+  color: white;
+  background: #B31B1B;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  -webkit-transform: translate(-50px, 0);
+  transform: translate(-50px, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+#submitGlass {
+  font-size: 24px;
+  color: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.fa-search {
+  font-size: 1.4rem;
+  color: #B31B1B;
+  z-index: 3;
+  top: 25%;
+  -webkit-transform: translate(-190px, 0);
+  transform: translate(-190px, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+.helpContent {
+  font-size: 18px; }
+
+.helpbtn {
+  font-family: Georgia, serif;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #fcfeff;
+  border: 1px solid #080A0A;
+  position: absolute;
+  display: inline-block;
+  margin: 1% 0.5%;
+  right: 0.5%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.helpbtn .helpContent {
+  visibility: hidden;
+  width: 300px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -12px;
+  left: 0%;
+  margin-left: -313px; }
+  .helpbtn .helpContent:after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 100%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -webkit-transform: rotate(270deg);
+    /* Safari 3-8 */
+    transform: rotate(270deg); }
+
+.helpbtn .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/*---------------------Parking Lot Map----------------------*/
+#parkbtn {
+  position: absolute;
+  margin: 0.1% 0;
+  right: 0.5%;
+  font-family: "Myriad Pro Semibold", sans-serif;
+  height: 50px;
+  padding: 1px 24px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  background: #008999;
+  border: 1px solid #080A0A;
+  color: #fcfeff; }
+  #parkbtn:hover {
+    background: #26AFBF; }
+
+#parkingmap {
+  height: 100%;
+  position: absolute;
+  left: 15%; }
+
+.parkDiv {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4); }
+
+.parkDiv-content {
+  margin: auto;
+  display: block;
+  height: 100%;
+  left: 15%; }
+
+#closeBtn {
+  position: relative;
+  z-index: 1;
+  left: 85%;
+  /*79*/
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold; }
+  #closeBtn:hover, #closeBtn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+
+.parkDiv-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1); } }
+#search_dd {
+  padding: 19px 0px 9px 16px;
+  display: inline-block;
+  margin: 0 1em 0 0.5%;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1em;
+  outline: none;
+  background: #fcfeff;
+  color: #A5A9AA;
+  border: 1px solid #D8DCDD;
+  transition: 0.3s all ease-in-out; }
+  #search_dd:focus {
+    background: #F2F6F7;
+    color: #080A0A;
+    border: 1px solid #BFC3C4;
+    outline-color: #BFC3C4; }
+  #search_dd:hover {
+    background: #F2F6F7; }
+
+/*# sourceMappingURL=style.css.map */
