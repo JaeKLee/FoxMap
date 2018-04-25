@@ -19,7 +19,7 @@ var tipuesearch_build = {"building": [
      
      {"title": "Cornell Boathouse", "text": "", "tags": "boat, corne, co, cor, corn, corne, cornel, bo, boa, boath, boatho, boathou, boathous", "url": "javascript:showtooltip('#corn');"},
      
-     {"title": "Donnelly Hall", "text": "", "tags": "Donelly, Donnelley, Donelley, food, grub, coffee, atm, do, don, donn, donne", "url": "javascript:showtooltip('#dn');"},  
+     {"title": "Donnelly Hall", "text": "", "tags": "Donelly, Donnelley, Donelley, food, grub, coffee, atm, do, don, donn, donne, sci, scie, scien, scienc", "url": "javascript:showtooltip('#dn');"},  
      
      {"title": "Dyson Center", "text": "", "tags": "food, grub, coffee, dys, dyso", "url": "javascript:showtooltip('#dy');"},
 
