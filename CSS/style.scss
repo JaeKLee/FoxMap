@@ -163,7 +163,7 @@ button:focus {
 	text-align: center;
 }
 
-input, #submit {
+#tipue_search_input, #submit {
   position: relative;
   width: 200px;
   height: 50px;
@@ -172,21 +172,21 @@ input, #submit {
   float: left;
 }
 
-input {
+#tipue_search_input {
   color: #333;
   z-index: 2;
   border: 0 none;
 }
-input:focus {
+#tipue_search_input:focus {
   outline: 0 none;
 }
-input:focus + #submit {
+#tipue_search_input:focus + #submit {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
-input:focus + #submit .fa {
+#tipue_search_input:focus + #submit .fa {
   -webkit-transform: translate(0px, 0);
           transform: translate(0px, 0);
   -webkit-transition-duration: 0.3s;
