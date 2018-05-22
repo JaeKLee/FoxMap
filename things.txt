@@ -1,2 +1,7 @@
 SC and Steel Plant point downwards
 Steel plant dimensions
+
+
+git add .
+git commit -m "comment"
+git push -u origin master

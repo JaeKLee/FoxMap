@@ -205,7 +205,7 @@ var tipuesearch = {"dept": [
      /*{"title": "Upperclass Residence", "text": "Upper New Townhouses", "tags": "", "url": ""},
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Lower)", "tags": "", "url": ""},
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Upper)", "tags": "", "url": ""},*/
-     {"title": "Marketplace", "text": "West Cedar Townhouses (Upper)", "tags": "food, grub, coffee, atm", "url": "javascript:showtooltip('#uwc');"},
+     {"title": "Marketplace", "text": "West Cedar Townhouses (Upper)", "tags": "food, grub, coffee, atm, up, upp, uppe", "url": "javascript:showtooltip('#uwc');"},
      {"title": "North End Housing Complex", "text": "Building D", "tags": "Building A, Building B, Building C, Building D, Gartland, housing, food, grub", "url": "javascript:showtooltip('#ng');"}
 
      //{"title": "", "text": "", "tags": "", "url": ""}

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Myriad Pro Semibold';
+  src: url("../fonts/MyriadPro-Semibold.otf"); }
+@font-face {
+  font-family: 'Ionicons';
+  src: url("../fonts/ionicons.woff" format("woff"), url("../fonts/ionicons.ttf") format("truetype")); }
+#header-top {
+  background-color: #b31b1b;
+  /*height: 62.4px;*/ }
+  #header-top .maristLogo {
+    margin: .3em 0 .5em 1.7em; }
+
+#copyright {
+  position: absolute;
+  right: 5px;
+  bottom: 0.5%;
+  color: #080A0A;
+  font-size: 12px; }
+
+* {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: arial;
+  width: 100%; }
+
+h2 {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  margin: 0.5%;
+  text-align: center; }
+
+body {
+  font-size: 16px;
+  font-family: Georgia, serif; }
+
+p.large {
+  line-height: 1.45;
+  font-size: 1.333em; }
+
+h1, h2, h3, h4 {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 2.369em; }
+
+h2 {
+  font-size: 1.777em; }
+
+h3 {
+  font-size: 1.333em; }
+
+h4 {
+  font-size: 1em; }
+
+p {
+  line-height: 1.45; }
+
+form {
+  font-family: "Myriad Pro Semibold", sans-serif !important;
+  font-weight: normal;
+  margin: auto; }
+  form label {
+    font-size: .8em;
+    padding-left: 1em; }
+  form input {
+    height: 48px;
+    width: 300px;
+    display: block;
+    margin-bottom: .8em;
+    padding: 19px 0px 9px 16px;
+    font-size: 1em;
+    background: #fcfeff;
+    color: #A5A9AA;
+    border: 1px solid #D8DCDD; }
+    form input:focus {
+      background: #F2F6F7;
+      color: #080A0A;
+      border: 1px solid #BFC3C4;
+      outline-color: #BFC3C4; }
+
+.input-success {
+  background: #fcfeff;
+  color: #080A0A;
+  border: 1px solid #5BCA5B; }
+
+.input-alert {
+  background: #fcfeff;
+  color: #080A0A;
+  border: 1px solid #BB2424; }
+
+.ion-checkmark {
+  color: #5BCA5B; }
+
+.ion-alert-circled {
+  color: #BB2424; }
+
+.positive-btn {
+  background: #008999;
+  border: 1px solid #080A0A;
+  color: #fcfeff; }
+  .positive-btn:hover {
+    background: #26AFBF; }
+
+.neutral-btn {
+  background: #fcfeff;
+  border: 1px solid #080A0A;
+  color: #080A0A; }
+  .neutral-btn:hover {
+    background: #080A0A;
+    color: #fcfeff; }
+
+.negative-btn {
+  background: #fcfeff;
+  border: 1px solid #B31B1B;
+  color: #B31B1B; }
+  .negative-btn:hover {
+    background: #B31B1B;
+    color: #fcfeff; }
+
+.sm-btn, .lg-btn {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  margin: .5em 0 .5em; }
+
+.sm-btn {
+  height: 32px;
+  padding: 8px 24px;
+  font-size: .75em;
+  text-transform: uppercase; }
+
+#loginForm {
+  margin-top: 10%;
+  margin-left: 40%; }
+
+/*# sourceMappingURL=loginStyle.css.map */

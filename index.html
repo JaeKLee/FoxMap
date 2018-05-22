@@ -13,10 +13,13 @@
     <!-- Regular CSS -->
     <link rel="stylesheet" href="CSS\style.css">
     </head>
-
+    <?php
+        require_once 'sql.php';
+    ?>
 <body>
      <div id="header-top">
         <img class="maristLogo" alt="Marist College Logo" src="pictures\logo.png" />
+        <!--<p><a href="PHP\adminLogin.php">To Login Page</a></p>-->
         <div class="helpbtn" onclick="helpFn()">?
             <span class="helpContent" id="helpText">
                 Tap on a building for more information or use the search bar.

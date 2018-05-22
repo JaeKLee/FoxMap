@@ -1,0 +1,84 @@
+// Created by Jae Kyoung Lee and Ian Sniffen
+// © Copyright 2017 Marist College. All Rights Reserved.
+
+// SASS is needed to use this CSS
+
+$marist-red:          #B31B1B;
+$marist-deep-red:     #670000;
+$marist-white:        #fcfeff;
+$marist-teal:         #008999;
+$marist-grey:         #E5E9EA;
+$marist-black:        #080A0A;
+$soft-black:          #808483;
+$marist-teal-hover:   #26AFBF;
+$marist-input-grey:   #A5A9AA;
+$marist-input-grey2:  #F2F6F7;
+$marist-input-border: #D8DCDD;
+
+$header-font: 'Myriad Pro Semibold',sans-serif;
+
+$timing: .3s;
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    src: url('../fonts/MyriadPro-Semibold.otf')
+}
+@font-face {
+    font-family: 'Ionicons';
+    src: url('../fonts/ionicons.woff' format("woff"), url("../fonts/ionicons.ttf") format("truetype"));
+}
+//------------------------Header-------------------------
+#header-top {
+    background-color: #b31b1b;
+    /*height: 62.4px;*/
+    .maristLogo {
+		margin: .3em 0 .5em 1.7em;
+	}
+}
+
+#copyright {
+    position: absolute; 
+    right: 5px; 
+    bottom: 0.5%; 
+    color: white; 
+    font-size: 12px;
+}
+
+//----------------------General Body---------------------
+*{
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+#imageID{
+    bottom:   0;
+    width:    100%; 
+    z-index:  -1; 
+    position: absolute;
+}
+
+.tooltip {
+    display: none;
+}
+
+.tooltip img{
+    float: left;
+}
+
+body {
+    font-family: arial; 
+    width: 100%;
+}
+
+h2 {
+    font-family: $header-font;
+    margin: 0.5%;
+    text-align: center;
+}
+
+/*-----------------Search-----------------*/

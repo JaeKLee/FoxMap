@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Myriad Pro Semibold';
+  src: url("../fonts/MyriadPro-Semibold.otf"); }
+@font-face {
+  font-family: 'Ionicons';
+  src: url("../fonts/ionicons.woff" format("woff"), url("../fonts/ionicons.ttf") format("truetype")); }
+#header-top {
+  background-color: #b31b1b;
+  /*height: 62.4px;*/ }
+  #header-top .maristLogo {
+    margin: .3em 0 .5em 1.7em; }
+
+#copyright {
+  position: absolute;
+  right: 5px;
+  bottom: 0.5%;
+  color: white;
+  font-size: 12px; }
+
+* {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0; }
+
+#imageID {
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  position: absolute; }
+
+.tooltip {
+  display: none; }
+
+.tooltip img {
+  float: left; }
+
+body {
+  font-family: arial;
+  width: 100%; }
+
+h2 {
+  font-family: "Myriad Pro Semibold", sans-serif;
+  margin: 0.5%;
+  text-align: center; }
+
+/*-----------------Search-----------------*/
+
+/*# sourceMappingURL=adminStyle.css.map */
