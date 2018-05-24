@@ -4,28 +4,30 @@
 <html>
 <head>
     <meta charset = "utf-8"/>
-    <link rel="shortcut icon" href="Pictures\seal.ico"/>
+    <link rel="shortcut icon" href="pictures\seal.ico"/>
     <title>Fox Map</title>
     <!-- Qtip2 -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.css">
     <!-- jQuery UI theme with Marist Red. Used for Qtip look-->
     <link rel="stylesheet" href="theme\jquery-ui.min.css">
     <!-- Regular CSS -->
     <link rel="stylesheet" href="CSS\style.css">
     </head>
-
+    <?php
+        require_once 'sql.php';
+    ?>
 <body>
      <div id="header-top">
-        <img class="maristLogo" alt="Marist College Logo" src="pictures/logo.png" />
+        <img class="maristLogo" alt="Marist College Logo" src="pictures\logo.png" />
+        <!--<p><a href="PHP\adminLogin.php">To Login Page</a></p>-->
         <div class="helpbtn" onclick="helpFn()">?
             <span class="helpContent" id="helpText">
                 Tap on a building for more information or use the search bar.
             </span>
         </div>
         
-        
     </div><!--end of header-top div-->
-    <p id="copyright">© Copyright 2017 Marist College. All Rights Reserved.</p>
+    <p id="copyright">© Copyright 2018 Marist College. All Rights Reserved.</p>
     
     
     <div id="searchBarDiv"> 
@@ -87,7 +89,6 @@
                 <p>Advising and Academic Services</p>
                 <p>Business and Financial Affairs</p>
                 <p>Donnelly Cafe</p>
-                <p>Fashion Program </p>
                 <p>Help Desk</p>
                 <p>Information Technology</p>
                 <p>Registrar</p>
@@ -282,9 +283,10 @@
         <area id="ah" title="Science and Allied Health Building" shape="poly" coords="6943,2681,6944,2827,7180,2863,7228,2855,7263,2834,7264,2715,7237,2687,7182,2680,7179,2598,7155,2576,7118,2577,7052,2633,6999,2624" />
             <div class="tooltip" id="ahtip">
                 <img style="width: 100%;" src="pictures\ah.jpg"> 
-                <p>Doctorate of Physical Therapy Space</p>
+                <p>Cognitive Computing Lab</p>
+                <p>Doctorate of Physical Therapy</p>
                 <p>Gross Anatomy Lab</p>
-                <p>Physician Assistant Program</p>
+                <p>Master's in Physician Assistant Studies</p>
                 <p>School of Science</p>
             </div>
         <area id="sh" title="Sheahan Hall" shape="poly" coords="1465,2690,1397,2728,1399,2858,1604,2929,1719,2864,1720,2764" />
@@ -297,6 +299,7 @@
                 <img style="width: 100%;" src="pictures\steel.jpg"> 
                 <p>Art Gallery</p>
                 <p>Digital Media</p>
+                <p>Fashion Program</p>
                 <p>Fine Arts Program</p>
             </div>
         <area id="tenney" title="Tenney Stadium at Leonidoff Field" shape="poly" coords="3906,3011,3975,3011,4485,3287,4530,3350,4530,3404,4428,3593,3729,3764,3579,3758,3054,3584,2964,3488,2958,3443,2985,3332,3069,3260,3183,3191,3582,3062,3804,3047" />
