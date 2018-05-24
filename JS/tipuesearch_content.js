@@ -192,15 +192,17 @@ var tipuesearch = {"dept": [
      {"title": "Upward Bound", "text": "St. Peter's", "tags": "u, up, upw, upwa, upwar, b, bo, bou, boun", "url": "javascript:showtooltip('#peter');"},
      
      //{"title": "Cognitive Computing Lab", "text": "Science and Allied Health Building", "tags": "", "url": "javascript:showtooltip('#ah');"},
-     {"title": "Doctorate of Physical Therapy Space", "text": "Science and Allied Health Building", "tags": "d, do, doc, doct, docto, doctor, doctora, doctorat, p, ph, phy, phys, physi, physic, physica, t, th, the, ther, thera, therap, s, sp, spa, spac", "url": "javascript:showtooltip('#ah');"},
+     {"title": "Cognitive Computing Lab", "text": "Science and Allied Health Building", "tags": "c, co, cog, cogn, cogni, cognit, cogniti, cognitiv, c, co, com, comp, compu, comput, compute, computi, computin, l, la", "url": "javascript:showtooltip('#ah');"},
+     {"title": "Doctorate of Physical Therapy", "text": "Science and Allied Health Building", "tags": "d, do, doc, doct, docto, doctor, doctora, doctorat, p, ph, phy, phys, physi, physic, physica, t, th, the, ther, thera, therap", "url": "javascript:showtooltip('#ah');"},
      {"title": "Gross Anatomy Lab", "text": "Science and Allied Health Building", "tags": "g, gr, gro, gros, a, an, ana, anat, anato, anatom, l, la", "url": "javascript:showtooltip('#ah');"},
-     {"title": "Physician Assistant Program", "text": "Science and Allied Health Building", "tags": "p, ph, phy, phys, physi, physic, physica, a, as, ass, assi, assis, assist, assista, assistan, p, pr, pro, prog, progr, progra", "url": "javascript:showtooltip('#ah');"},
+     {"title": "Master's in Physician Assistant Studies", "text": "Science and Allied Health Building", "tags": "m, ma, mas, mast, maste, master, masters, p, ph, phy, phys, physi, physic, physica, a, as, ass, assi, assis, assist, assista, assistan, s, st, stu, stud, studi, studie", "url": "javascript:showtooltip('#ah');"},
      {"title": "School of Science", "text": "Science and Allied Health Building", "tags": "s, sc, sch, scho, schoo, s, sc, sci, scie, scien, scienc, sciences", "url": "javascript:showtooltip('#ah');"},
      
      /*{"title": "Freshman Residence", "text": "Sheahan Hall", "tags": "", "url": ""},*/
      
      {"title": "Art Gallery", "text": "Steel Plant Studios and Gallery", "tags": "a, ar, art, arts, g, ga, gal, gall, galle, galler", "url": "javascript:showtooltip('#st');"},
      {"title": "Digital Media", "text": "Steel Plant Studios and Gallery", "tags": "d, di, dig, digi, digit, digita, m, me, med, medi", "url": "javascript:showtooltip('#st');"},
+     {"title": "Fashion Program", "text": "Steel Plant Studios and Gallery", "tags": "f, fa, fas, fash, fashi, fashio, p, pr, pro, prog, progr, progra", "url": "javascript:showtooltip('#st');"},
      {"title": "Fine Arts Program", "text": "Steel Plant Studios and Gallery", "tags": "f, fi, fin, a, ar, art, p, pr, pro, prog, progr, progra", "url": "javascript:showtooltip('#st');"},
      
      //{"title": "Multipurpose Athletic Stadium", "text": "Tenney Stadium at Leonidoff Field", "tags": "", "url": ""},
