@@ -33,7 +33,8 @@ $timing: .3s;
 }
 //------------------------Header-------------------------
 #header-top {
-    background-color: #b31b1b;
+    text-align: left;
+    background-color: $marist-red;
     /*height: 62.4px;*/
     .maristLogo {
 		margin: .3em 0 .5em 1.7em;
@@ -44,41 +45,12 @@ $timing: .3s;
     position: absolute; 
     right: 5px; 
     bottom: 0.5%; 
-    color: white; 
+    color: $marist-black; 
     font-size: 12px;
 }
 
-//----------------------General Body---------------------
-*{
-      font-family: Georgia, serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-#imageID{
-    bottom:   0;
-    width:    100%; 
-    z-index:  -1; 
-    position: absolute;
-}
-
-.tooltip {
-    display: none;
-}
-
-.tooltip img{
-    float: left;
-}
-
-body {
-    font-family: arial; 
-    width: 100%;
-}
+//----------------------------------------------------
 
 h2 {
-    font-family: $header-font;
-    margin: 0.5%;
     text-align: center;
 }
-
-/*-----------------Search-----------------*/

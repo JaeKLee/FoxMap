@@ -5,3 +5,11 @@ Steel plant dimensions
 git add .
 git commit -m "comment"
 git push -u origin master
+
+To install phpmyAdmin using cloud9
+    mysql-ctl install
+    phpmyadmin-ctl install
+    mysql-ctl start
+    
+Image coord website:
+    http://imagemap-generator.dariodomi.de/

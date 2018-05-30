@@ -145,7 +145,7 @@ selectedOption == 0 ?  showVar = 3: showVar = 5;
 
   $('#tipue_search_input, #submit').tipuesearch({
       'show' : showVar,
-      'minimumLength' : 2,
+      'minimumLength' : 1,
       'showTitleCount' : false
   });
 
