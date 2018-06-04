@@ -19,11 +19,11 @@ var tipuesearch_build = {"building": [
      
      {"title": "Cornell Boathouse", "text": "", "tags": "c, co, cor, corn, corne, cornel, b, bo, boa, boat, boath, boatho, boathou, boathous", "url": "javascript:showtooltip('#corn');"},
      
-     {"title": "Donnelly Hall", "text": "", "tags": "Donelly, Donnelley, Donelley, f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, a, at, atm, d, do, don, donn, donnel, donel, donne, s, sc, sci, scie, scien, scienc", "url": "javascript:showtooltip('#dn');"},  
+     {"title": "Donnelly Hall", "text": "", "tags": "Donelly, Donnelley, Donelley, f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, a, at, atm, d, do, don, donn, donnel, donel, donne", "url": "javascript:showtooltip('#dn');"},  
      
      {"title": "Dyson Center", "text": "", "tags": "f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, d, dy, dys, dyso, c, ce, cen,cent,cente", "url": "javascript:showtooltip('#dy');"},
 
-     {"title": "Fern Tor", "text": "", "tags": "Fern Tor, f, fe, fer", "url": "javascript:showtooltip('#fern');"},
+     {"title": "Fern Tor", "text": "", "tags": "f, fe, fer, t, to", "url": "javascript:showtooltip('#fern');"},
      
      {"title": "Fontaine Hall", "text": "", "tags": "f, fo, fon, font, fonta, fontai, fontain, h, ha, hal", "url": "javascript:showtooltip('#fn');"},
      
@@ -31,7 +31,7 @@ var tipuesearch_build = {"building": [
      {"title": "Fulton Street Townhouses (Lower)", "text": "", "tags": "New Fulton, Lower Fulton, h, ho, hou, hous, house, housing, l, lo, low, lowe, f, fu, ful, fult, fulto, t, to, tow, town, townh, townho, townhou, townhous, townhouse", "url": "javascript:showtooltip('#lf');"},
      {"title": "Fulton Street Townhouses (Upper)", "text": "", "tags": "Upper Fulton, h, ho, hou, hous, house, housing, u, up, upp, uppe, f, fu, ful, fult, fulto, t, to, tow, town, townh, townho, townhou, townhous, townhouse", "url": "javascript:showtooltip('#uf');"},
      
-     {"title": "Gartland Athletic Field", "text": "", "tags": "s, so, sof, soft, softb, softba, softbal, Softball, r, ru, rug, rugb, Rugby, North Field", "url": "javascript:showtooltip('#sball');"},
+     {"title": "Gartland Athletic Field", "text": "", "tags": "g, ga, gar, gart, gartl, gartla, gartlan, a, at, ath, athl, athle, athlet, athleti, athletics, f, fi, fie, fiel, North Field", "url": "javascript:showtooltip('#sball');"},
      
      {"title": "Greystone Hall", "text": "", "tags": "g, gr, gre, grey, greys, greyst, greysto, greyston", "url": "javascript:showtooltip('#gs');"},
 
@@ -53,7 +53,7 @@ var tipuesearch_build = {"building": [
      
      {"title": "The James J. McCann Recreation Center", "text": "", "tags": "a, at, atm, m, mc, mcc, mcca, mccan, s, sp, spo, spor, sport, sports, a, at, ath, athl, athle, athlet, athleti", "url": "javascript:showtooltip('#mccann');"},
      
-     {"title": "McCann Baseball Field", "text": "", "tags": "m, mc, mcc, mcca, mccan, s, sp, spo, spor, sport, sports, a, at, ath, athl, athle, athlet, athleti, b, ba, bas, base, baseb, baseba, basebal", "url": "javascript:showtooltip('#bball');"},
+     {"title": "McCann Baseball Field", "text": "", "tags": "m, mc, mcc, mcca, mccan, s, sp, spo, spor, sport, sports, a, at, ath, athl, athle, athlet, athleti, athletic, athletics, b, ba, bas, base, baseb, baseba, basebal", "url": "javascript:showtooltip('#bball');"},
      
      {"title": "Midrise Hall", "text": "", "tags": "h, ho, hou, hous, house, housing, m mi, mid, midr, midri, mirdris, s, su, sui, suit, suite", "url": "javascript:showtooltip('#mr');"},
      
