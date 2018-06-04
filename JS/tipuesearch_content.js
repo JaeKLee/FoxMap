@@ -62,7 +62,7 @@ var tipuesearch_build = {"building": [
      {"title": "Tom & Mary Ward Hall", "text": "", "tags": "h, ho, hou, hous, house, housing, b, bu, bui, buil, build, buildi, buildin, A, bui, buil, build, buildi, buildin, t, to, m, ma, mar, w, wa, war, h, ha, hal", "url": "javascript:showtooltip('#tmw');"},
      {"title": "Building B", "text": "", "tags": "h, ho, hou, hous, house, housing, b, bu, bui, buil, build, buildi, buildin, B", "url": "javascript:showtooltip('#ngb');"},
      {"title": "Building C", "text": "", "tags": "h, ho, hou, hous, house, housing, b, bu, bui, buil, build, buildi, buildin, C", "url": "javascript:showtooltip('#ngc');"},
-     {"title": "Building D", "text": "", "tags": "h, ho, hou, hous, house, housing, b, bu, bui, buil, build, buildi, buildin, D, f, fo, foo, food, g, gr, gru, grub, gym", "url": "javascript:showtooltip('#ngd');"},
+     {"title": "Building D", "text": "", "tags": "h, ho, hou, hous, house, housing, b, bu, bui, buil, build, buildi, buildin, D, f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, gym", "url": "javascript:showtooltip('#ngd');"},
 
 
      {"title": "Rotunda", "text": "", "tags": "a, at, atm, tour, r, ro, rot, rotu, rotun, rotund", "url": "javascript:showtooltip('#rt');"},
@@ -212,7 +212,7 @@ var tipuesearch = {"dept": [
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Lower)", "tags": "", "url": ""},
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Upper)", "tags": "", "url": ""},*/
      {"title": "Marketplace", "text": "West Cedar Townhouses (Upper)", "tags": "f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, c, co, cof, coff, coffe, coffee, a, at, atm, m, ma, mar, mark, marke, market, marketp, marketpl, marketpla, marketplac", "url": "javascript:showtooltip('#uwc');"},
-     {"title": "Building D", "text": "Building D", "tags": "Building D, f, fo, foo, f, fo, foo, food, g, gr, gru, grub, g, gy", "url": "javascript:showtooltip('#ng');"}
+     {"title": "Building D", "text": "Building D", "tags": "Building D, f, fo, foo, f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, g, gy", "url": "javascript:showtooltip('#ng');"}
 
      //{"title": "", "text": "", "tags": "", "url": ""}
      
