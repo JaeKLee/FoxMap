@@ -212,7 +212,7 @@ var tipuesearch = {"dept": [
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Lower)", "tags": "", "url": ""},
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Upper)", "tags": "", "url": ""},*/
      {"title": "Marketplace", "text": "West Cedar Townhouses (Upper)", "tags": "f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, c, co, cof, coff, coffe, coffee, a, at, atm, m, ma, mar, mark, marke, market, marketp, marketpl, marketpla, marketplac", "url": "javascript:showtooltip('#uwc');"},
-     {"title": "Building D", "text": "Building D", "tags": "Building D, f, fo, foo, f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, g, gy", "url": "javascript:showtooltip('#ng');"}
+     {"title": "Building D", "text": "Building D", "tags": "Building D, f, fo, foo, f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, coffee, g, gy", "url": "javascript:showtooltip('#ngd');"}
 
      //{"title": "", "text": "", "tags": "", "url": ""}
      
