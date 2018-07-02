@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="pictures\seal.ico"/>
     <title>Fox Map</title>
     <!-- Qtip2 -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.css">
     <!-- jQuery UI theme with Marist Red. Used for Qtip look-->
     <link rel="stylesheet" href="theme\jquery-ui.min.css">
     <!-- Regular CSS -->
@@ -39,20 +39,22 @@
                 <option value="1">Buildings</option>
             </select>
         </form>
-            <button id="parkbtn">Parking <br>Information</button>
+            <button id="parkbtn">Parking<br>Information</button>
             <div id="parkingDiv" class="parkDiv"> <!--Modal with parking map-->
                 <div class="parkDiv-content">
                     <img id="parkingmap" src="pictures\parkingmap.svg">
-                        <label id="closeBtn">X</label>
+                    <label id="closeBtn">X</label>
                 </div> <!--End of parkDiv-content-->
             </div> <!--End of parkingDiv-->
         <div id="tipue_search_content"></div>
      </div> <!--End of searchBarDiv-->
-     
-     
+    
+    <!--<canvas></canvas>-->
+    <img id="mapImage" src="FoxMap.jpg">
     <img id="imageID" src="FoxMap.jpg" alt="Fox Map" usemap = "#foxmap">
+    
     <map name="foxmap" id="foxmap">
-       
+  
         <area id="byrne" title="Byrne House" shape="poly" coords="1524,2256,1595,2183,1702,2228,1718,2223,1725,2273,1604,2335,1522,2297" />
             <div class="tooltip" id="byrnetip">
                <img style="width: 100%;" src="pictures\byrne.jpg"> 
@@ -312,6 +314,11 @@
                 <img style="width: 100%;" src="pictures\tennis.jpg"> 
                 <p>Tennis Courts</p>
             </div>
+        <area id="under" title="Underpass" shape="poly" coords="6287,2840,6018,2694,5969,2753,6265,2898" />
+            <div class="tooltip" id="undertip">
+                <img style="width: 100%;" src="pictures\under.jpg"> 
+                <p>Underpass</p>
+            </div>    
         <area id="un" title="Upper New Townhouses" shape="poly" coords="4680,1880,4632,1757,4608,1712,4458,1625,4458,1589,4488,1526,4521,1532,4527,1523,4674,1589,4674,1595,4680,1607,4677,1661,4746,1691,4746,1697,4761,1703,4806,1790,4806,1853,4782,1874" />
             <div class="tooltip" id="untip">
                 <img style="width: 100%;" src="pictures\new.jpg"> 
@@ -328,7 +335,7 @@
                 <p>Upperclass Residence</p>
                 <p>Marketplace</p>
             </div>
-    
+
     </map>
     <!-- jQuery library -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
@@ -345,5 +352,7 @@
     <!--<script src="JS\jquery.imagemapster.min.js" type="text/javascript"></script>-->
     <!--Regular JS-->
     <script src="JS\script.js" type="text/javascript"></script>
+    <script src="JS\canvas.js"></script>
+    
 </body>
 </html>
