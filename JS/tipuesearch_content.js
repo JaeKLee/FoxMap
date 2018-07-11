@@ -15,7 +15,7 @@ var tipuesearch_build = {"building": [
      
      {"title": "Champagnat Hall", "text": "", "tags": "h, ho, hou, hous, house, housing, f, fr, fre, fres,fresh,freshm, freshmen, freshman, c, ch, cha, cham, champ, champa, champag, champagn, champagna", "url": "javascript:showtooltip('#ch');"},
      
-     {"title": "Chapel", "text": "", "tags": "c, ch, cha, chap, chape", "url": "javascript:showtooltip('#chapel');"},
+     {"title": "Our Lady Seat of Wisdom Chapel", "text": "", "tags": "c, ch, cha, chap, chape, l, la, lad, s, se, sea", "url": "javascript:showtooltip('#chapel');"},
      
      {"title": "Cornell Boathouse", "text": "", "tags": "c, co, cor, corn, corne, cornel, b, bo, boa, boat, boath, boatho, boathou, boathous", "url": "javascript:showtooltip('#corn');"},
      
