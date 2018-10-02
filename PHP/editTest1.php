@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../css_marist/style.css">
     <link rel="stylesheet" href="../CSS/baseStyle.css">
     
-
 </head>
     
 <body>

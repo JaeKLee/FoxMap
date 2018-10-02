@@ -1,0 +1,83 @@
+<html>
+	<body>
+		<p id="output"></p>
+		<script>
+			var x = document.getElementById("output");
+			window.onload=function(){
+				navigator.geolocation.getCurrentPosition(curLoc);
+			}
+			function curLoc(position) {
+			  NearestBuilding(position.coords.latitude, position.coords.longitude);
+			}
+			function deg2Rad(deg){
+				return deg*Math.PI/180;
+			}
+			function haversineDistance(lat1, lon1, lat2, lon2) {
+			  lat1 = deg2Rad(lat1);
+			  lat2 = deg2Rad(lat2);
+			  lon1 = deg2Rad(lon1);
+			  lon2 = deg2Rad(lon2);
+			  var R = 6371; // Earth's mean radius in km
+			  var x = (lon2 - lon1) * Math.cos((lat1 + lat2) / 2);
+			  var y = (lat2 - lat1);
+			  var d = Math.sqrt(x * x + y * y) * R;
+			  return d;
+			}
+			var buildings = [
+				["51 Fulton",41.723993, -73.927492],
+				["Byrne House",41.719976, -73.936653],
+				["Cannavino Library",41.721880, -73.934180],	
+				["Champagnat Hall",41.720401, -73.935644],
+				["Our Lady Seat of Wisdom Chapel",41.722082, -73.933536],
+				["Cornell Boathouse",41.721369, -73.938455],
+				["Donnelly Hall",41.720723, -73.932769],
+				["Dyson Center",41.724200, -73.933091],
+				["Fontaine Hall",41.725607, -73.932996],
+				["Foy Townhouses",41.724593, -73.934128],
+				["Fulton Street Townhouses (Lower)",41.722794, -73.928736],
+				["Fulton Street Townhouses (Upper)",41.722989, -73.926496],
+				["Greystone Hall",41.721414, -73.933922],
+				["Hancock Center",41.722671, -73.934630],
+				["Kieran Gatehouse",41.721784, -73.931943],
+				["Kirk House",41.723858, -73.935204],
+				["Leo Hall",41.719540, -73.936186],
+				["Lowell Thomas Communications Center",41.723338, -73.932785],
+				["Lower New Townhouses",41.722751, -73.935230],
+				["Marian Hall",41.721074, -73.934287],
+				["Marist Boathouse",41.720672, -73.938482],
+				["The James J. McCann Recreation Center",41.717665, -73.935224],
+				["Midrise Hall",41.721510, -73.936030],
+				["Murray Student Center/Music Building",41.720972, -73.935510],
+				["Tom & Mary Ward Hall",41.726812, -73.932930],
+				["Building B",41.727039, -73.933992],
+				["Building C",41.726671, -73.934057],
+				["Building D",41.726182, -73.933740],
+				["Rotunda",41.721386, -73.935381],
+				["St. Ann's Hermitage",41.728101, -73.934378],
+				["St. Peters",41.722560, -73.932724],
+				["Science and Allied Health Building",41.722374, -73.930143],
+				["Sheahan Hall",41.719268, -73.935669],
+				["Steel Plant Studios and Gallery",41.721482, -73.930848],
+				["Tenney Stadium at Leonidoff Field",41.719138, -73.932962],
+				["Upper New Townhouses",41.723574, -73.934718],
+				["West Cedar Townhouses (Lower)",41.720253, -73.929829],
+				["West Cedar Townhouses (Upper)",41.720729, -73.926063]				
+			];
+			function NearestBuilding(lat,lon){
+				var min = Number.MAX_VALUE;
+				var minInd;
+				for(i=0;i<buildings.length;i++){
+					var dif = haversineDistance(lat,lon,buildings[i][1],buildings[i][2]);
+					if(dif<min){
+						minInd=i;
+						min=dif;
+					}
+				}
+				if(min<.04)
+					x.innerHTML="Nearest building is "+buildings[minInd][0]+". Distance (in KM) is "+min;
+				else
+					x.innerHTML="Outside Marist campus.";
+			}
+		</script>
+	</body>
+</html>

@@ -5,7 +5,7 @@
   font-family: 'Ionicons';
   src: url("../fonts/ionicons.woff" format("woff"), url("../fonts/ionicons.ttf") format("truetype")); }
 #header-top {
-  background-color: #b31b1b;
+  background-color: #B31B1B;
   /*height: 62.4px;*/ }
   #header-top .maristLogo {
     margin: .3em 0 .5em 1.7em; }
@@ -14,7 +14,7 @@
   position: absolute;
   right: 5px;
   bottom: 0.5%;
-  color: white;
+  color: #fcfeff;
   font-size: 12px; }
 
 * {
@@ -28,6 +28,14 @@
   z-index: -1;
   position: absolute; }
 
+canvas {
+  bottom: 0;
+  z-index: -2;
+  position: absolute; }
+
+#mapImage {
+  display: none; }
+
 .tooltip {
   display: none; }
 
@@ -35,7 +43,6 @@
   float: left; }
 
 body {
-  font-family: arial;
   width: 100%; }
 
 h2 {
@@ -55,9 +62,14 @@ form {
   position: relative;
   padding: 0 0 0 50px;
   background: #fcfeff;
-  border: none;
   border-radius: 0px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  border: 1px solid #D8DCDD;
+  color: #080A0A;
+  z-index: 2;
+  border: 0 none; }
+  #tipue_search_input:focus {
+    outline: 0 none; }
 
 button:focus {
   outline: 0; }
@@ -84,47 +96,38 @@ button:focus {
 #searchBarDiv {
   background-color: rgba(255, 255, 255, 0.5);
   padding-top: 25px;
+  position: relative;
   width: 100%; }
 
 #tipue_search_foot_boxes {
   padding: 0;
   margin-left: 2%;
   cursor: pointer; }
+  #tipue_search_foot_boxes li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline; }
+    #tipue_search_foot_boxes li a {
+      color: #333;
+      margin-right: 7px;
+      text-decoration: none;
+      text-align: center; }
+      #tipue_search_foot_boxes li a:hover {
+        color: white; }
+    #tipue_search_foot_boxes li.current {
+      color: grey;
+      margin-right: 7px;
+      text-align: center; }
 
-#tipue_search_foot_boxes li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline; }
-
-#tipue_search_foot_boxes li a {
-  color: #333;
-  margin-right: 7px;
-  text-decoration: none;
-  text-align: center; }
-  #tipue_search_foot_boxes li a:hover {
-    color: white; }
-
-#tipue_search_foot_boxes li.current {
-  color: grey;
-  margin-right: 7px;
-  text-align: center; }
-
-#tipue_search_input, #submit {
+#tipue_search_input,
+#submit {
   position: relative;
   width: 200px;
   height: 50px;
   padding: 0;
   display: inline-block;
   float: left; }
-
-#tipue_search_input {
-  color: #333;
-  z-index: 2;
-  border: 0 none; }
-
-#tipue_search_input:focus {
-  outline: 0 none; }
 
 #tipue_search_input:focus + #submit {
   -webkit-transform: translate(0, 0);
@@ -154,7 +157,7 @@ button:focus {
 
 #submitGlass {
   font-size: 24px;
-  color: white;
+  color: #fcfeff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
@@ -272,7 +275,6 @@ button:focus {
 
 #closeBtn {
   position: relative;
-  z-index: 1;
   left: 85%;
   /*79*/
   color: #f1f1f1;

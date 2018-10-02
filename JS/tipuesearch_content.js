@@ -7,13 +7,15 @@ var tipuesearch = {"pages": [
 ]};
 
 */
-//add rotunda and softball
+
+
+
 var tipuesearch_build = {"building": [
      {"title": "Byrne House", "text": "", "tags": "b, by, byr, byrn, h, ho, hou, hous, byrn house, byrn ho, byrn hou, by ho, by hou, by hous", "url": "javascript:showtooltip('#byrne');"},
       
      {"title": "Cannavino Library", "text": "", "tags": "c, co, cof, coff, coffe, coffee, l, li, lib, libr, libra, librar, c, ca, can, cann, canna, cannav, cannavi, vannavin", "url": "javascript:showtooltip('#library');"},
      
-     {"title": "Champagnat Hall", "text": "", "tags": "h, ho, hou, hous, house, housing, f, fr, fre, fres,fresh,freshm, freshmen, freshman, c, ch, cha, cham, champ, champa, champag, champagn, champagna", "url": "javascript:showtooltip('#ch');"},
+     {"title": "Champagnat Hall", "text": "", "tags": "housing, freshmen, freshman, c, ch, cha, cham, champ, champa, champag, champagn, champagna", "url": "javascript:showtooltip('#ch');"},
      
      {"title": "Chapel", "text": "", "tags": "c, ch, cha, chap, chape", "url": "javascript:showtooltip('#chapel');"},
      
@@ -212,7 +214,7 @@ var tipuesearch = {"dept": [
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Lower)", "tags": "", "url": ""},
      {"title": "Upperclass Residence", "text": "West Cedar Townhouses (Upper)", "tags": "", "url": ""},*/
      {"title": "Marketplace", "text": "West Cedar Townhouses (Upper)", "tags": "f, fo, foo, food, g, gr, gru, grub, c, co, cof, coff, coffe, c, co, cof, coff, coffe, coffee, a, at, atm, m, ma, mar, mark, marke, market, marketp, marketpl, marketpla, marketplac", "url": "javascript:showtooltip('#uwc');"},
-     {"title": "Building D", "text": "Building D", "tags": "Building D, f, fo, foo, f, fo, foo, food, g, gr, gru, grub, g, gy", "url": "javascript:showtooltip('#ng');"}
+     {"title": "Building D", "text": "Building D", "tags": "Building D, f, fo, foo, f, fo, foo, food, g, gr, gru, grub, g, gy", "url": "javascript:showtooltip('#ngd');"}
 
      //{"title": "", "text": "", "tags": "", "url": ""}
      
